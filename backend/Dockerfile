@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 #Second Stage
-FROM openjdk:eclipse-temurin:11-jre
+FROM eclipse-temurin:11-jre 
 
 WORKDIR /app
 
